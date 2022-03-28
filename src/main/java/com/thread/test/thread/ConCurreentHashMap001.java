@@ -1,6 +1,5 @@
-package com.thread.test;
+package com.thread.test.thread;
 
-import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 

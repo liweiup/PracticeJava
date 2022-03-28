@@ -1,6 +1,5 @@
-package com.thread.test;
+package com.thread.test.thread;
 
-import javax.lang.model.element.AnnotationValue;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ThreadFour implements Runnable{

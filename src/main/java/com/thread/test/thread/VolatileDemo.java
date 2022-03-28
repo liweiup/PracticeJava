@@ -1,4 +1,4 @@
-package com.thread.test;
+package com.thread.test.thread;
 
 public class VolatileDemo {
     public static volatile boolean stop=true;

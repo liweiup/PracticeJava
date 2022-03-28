@@ -1,4 +1,4 @@
-package com.thread.test;
+package com.thread.test.thread;
 
 import java.io.IOException;
 import java.util.concurrent.*;
