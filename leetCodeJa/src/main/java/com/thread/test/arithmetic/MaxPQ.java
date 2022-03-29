@@ -104,33 +104,33 @@ public class MaxPQ<Key extends Comparable<Key>> {
         MaxPQ<Integer> pq = new MaxPQ<Integer>(10);
         pq.insert(2);
         pq.insert(3);
-//        pq.insert(4);
-//        pq.insert(5);
-//        pq.insert(6);
-//        pq.insert(7);
-//        pq.insert(8);
-//        pq.insert(9);
-//        pq.insert(10);
-//        pq.insert(1);
-//        System.out.println(pq.delMax());
-//        System.out.println(pq);
-//
-//        System.out.println(pq.delMax());
-//        System.out.println(pq);
-//
-//        System.out.println(pq.delMax());
-//        System.out.println(pq);
-//
-//        System.out.println(pq.delMax());
-//        System.out.println(pq);
-//
-//        System.out.println(pq.delMax());
-//        System.out.println(pq);
-//
-//        System.out.println(pq.delMax());
-//        System.out.println(pq);
-//
-//        System.out.println(pq.delMax());
-//        System.out.println(pq);
+        pq.insert(4);
+        pq.insert(5);
+        pq.insert(6);
+        pq.insert(7);
+        pq.insert(8);
+        pq.insert(9);
+        pq.insert(10);
+        pq.insert(1);
+        System.out.println(pq.delMax());
+        System.out.println(pq);
+
+        System.out.println(pq.delMax());
+        System.out.println(pq);
+
+        System.out.println(pq.delMax());
+        System.out.println(pq);
+
+        System.out.println(pq.delMax());
+        System.out.println(pq);
+
+        System.out.println(pq.delMax());
+        System.out.println(pq);
+
+        System.out.println(pq.delMax());
+        System.out.println(pq);
+
+        System.out.println(pq.delMax());
+        System.out.println(pq);
     }
 }
