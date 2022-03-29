@@ -35,8 +35,3 @@ func isValid(s string) bool {
 //	//}
 //	//strings.Replace()
 //}
-
-func main()  {
-	fmt.Println(isValid("()[]{})"))
-	//fmt.Println("([)]")
-}
