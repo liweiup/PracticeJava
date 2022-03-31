@@ -16,24 +16,6 @@ func MergeKLists(lists []*ListNode) *ListNode {
 			list = list.Next
 		}
 	}
-	for {
-		nlr := nl.Next
-		for {
-			if nl.Val > nlr.Val {
-				pp.Next = nlr
-			} else {
-				pp.Next = &nl
-			}
-			if nlr == nil || nlr.Next == nil {
-				break
-			}
-			nlr = nlr.Next
-		}
-		if nl.Next == nil {
-			break
-		}
-		nl = *nl.Next
-	}
 	fmt.Println(pp)
 	return nil
 }
