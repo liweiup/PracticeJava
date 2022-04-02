@@ -42,16 +42,25 @@ public class depthFirstValues {
         Stack<Node> s = new Stack<>();
         ArrayList<String> sites = new ArrayList<>();
         s.push(a);
-        while (s.size() > 0) {
-            Node current = s.pop();
-            sites.add(current.val);
-            if (current.right != null) {
-                s.push(current.right);
-            }
-            if (current.left != null) {
-                s.push(current.left);
-            }
+//        while (s.size() > 0) {
+//            Node current = s.pop();
+//            sites.add(current.val);
+//            if (current.right != null) {
+//                s.push(current.right);
+//            }
+//            if (current.left != null) {
+//                s.push(current.left);
+//            }
+//        }
+//        System.out.println(sites);
+        digui(a);
+    }
+    public static void digui(Node root) {
+        if (root == null) {
+            return;
         }
-        System.out.println(sites);
+        System.out.println(root.val);
+        digui(root.left);
+        digui(root.right);
     }
 }

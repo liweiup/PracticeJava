@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func main() {
-	ch := make(chan string,3);
+func maint() {
+	ch := make(chan string, 3)
 	ch <- "A"
 	ch <- "B"
 	ch <- "C"

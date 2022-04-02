@@ -44,4 +44,7 @@ func main() {
 	fmt.Printf("%v %T cap %v\n", fa, fa, cap(fa))
 	fmt.Printf("%v %T cap %v\n", fb, fb, cap(fb))
 
+	list1 := ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: nil}}}
+	list2 := ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: nil}}}
+	mergeTwoLists(&list1, &list2)
 }

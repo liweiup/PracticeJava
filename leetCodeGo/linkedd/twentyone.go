@@ -1,16 +1,10 @@
-package linked
+package main
 
 import "fmt"
 
 type ListNode struct {
-   Val int
-   Next *ListNode
-}
-
-func main()  {
-	list1 := ListNode{Val: 1,Next:&ListNode{Val: 2,Next: &ListNode{Val: 4,Next: nil}}}
-	list2 := ListNode{Val: 1,Next:&ListNode{Val: 3,Next: &ListNode{Val: 4,Next: nil}}}
-	mergeTwoLists(&list1,&list2);
+	Val  int
+	Next *ListNode
 }
 
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) {
