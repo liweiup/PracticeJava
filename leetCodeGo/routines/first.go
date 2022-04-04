@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main1() {
 	go spinner(100 * time.Millisecond)
 	const n = 45
 	fibN := fib(n)
@@ -25,6 +25,6 @@ func fib(x int) int {
 	if x < 2 {
 		return x
 	}
-	xx := fib(x - 1) + fib(x - 2)
+	xx := fib(x-1) + fib(x-2)
 	return xx
 }
