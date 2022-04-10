@@ -1,50 +1,22 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("sd")
-	var i int = 42
-	fmt.Printf("%v %T \n", i, i)
-	j := strconv.Itoa(i)
-	fmt.Printf("%v %T\n", j, j)
+	// list1 := ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: nil}}}
+	// list2 := ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: nil}}}
+	// nx := mergeTwoLists2(&list1, &list2)
+	list3 := ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: nil}}}
+	// nx := reverseList(&list3)
+	nx := reverseList2(&list3)
+	// fmt.Println(nx)
 
-	var ui uint8 = 19
-	fmt.Printf("%v %T\n", ui, ui)
-
-	var ir = 1
-	ir = ir << 1
-	fmt.Printf("十进制%v 二进制%b\n ", ir, ir)
-	fmt.Printf("十进制%v 二进制%b\n ", ir, ir)
-	ir = ir << 1
-	fmt.Printf("十进制%v 二进制%b\n ", ir, ir)
-	ir = ir << 1
-	fmt.Printf("十进制%v 二进制%b\n ", ir, ir)
-
-	ADD := 1 // 增加权限
-	UPD := 2 // 修改权限
-	SEL := 4 // 修改权限
-	fmt.Println(ADD | UPD | SEL)
-
-	arr := []string{"a", "b", "c"}
-	arr = append(arr, "ss")
-
-	ar := make([]string, 1)
-	ar = append(ar, []string{"a", "b", "c", "d", "e"}...)
-	for i := 0; i < len(ar); i++ {
-		fmt.Println(ar[i])
+	for {
+		fmt.Println(nx)
+		if nx == nil || nx.Next == nil {
+			break
+		}
+		nx = nx.Next
 	}
-	fmt.Printf("%v %T cap %v\n", ar, ar, cap(ar))
 
-	fa := []int{1, 2, 3, 4, 5}
-	fb := append(fa[:2], fa[3:]...)
-	fmt.Printf("%v %T cap %v\n", fa, fa, cap(fa))
-	fmt.Printf("%v %T cap %v\n", fb, fb, cap(fb))
-
-	list1 := ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: nil}}}
-	list2 := ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: nil}}}
-	mergeTwoLists(&list1, &list2)
 }

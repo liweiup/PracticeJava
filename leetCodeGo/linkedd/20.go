@@ -17,7 +17,7 @@ func isValid(s string) bool {
 	bArr := []byte(s)
 	strArr := []string{}
 	for _, b := range bArr {
-		if !InSliceString(string(b),strArr) {
+		if !InSliceString(string(b), strArr) {
 			strArr = append(strArr, string(b))
 		} else {
 			fmt.Println()
@@ -33,5 +33,4 @@ func isValid(s string) bool {
 //	//	"[]",
 //	//	"()",
 //	//}
-//	//strings.Replace()
-//}
+//	//strings.Repl
